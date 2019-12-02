@@ -53,10 +53,45 @@
 // // Get the element with id="defaultOpen" and click on it
 // document.querySelector("#defaultOpen").click();
 
+console.log(Date());
+console.log()
+
+// console.log(Timestamp(System.currentTimeMillis()))
+
+// var PRIV_KEY = "82f8e29ecde6f6c5421e8938a8a410da894103e9";
+// var PUBLIC_KEY = "69be26d469c729fce76dafc0e7933d34";
+
+// function getMarvelResponse() {
+
+//   // you need a new ts every request                                                                                    
+//   var ts = new Date().getTime();
+//   var hash = CryptoJS.MD5(ts + PRIV_KEY + PUBLIC_KEY).toString();
+  
+//   // the api deals a lot in ids rather than just the strings you want to use
+//   var characterId = '1009718'; // wolverine                                                                             
 
 
+//   var url = 'http://gateway.marvel.com:80/v1/public/comics';
 
+//   console.log(url);
+//   $.getJSON(url, {
+//     ts: ts,
+//     apikey: PUBLIC_KEY,
+//     hash: hash,
+//     characters: characterId
+//     })
+//     .done(function(data) {
+//       // sort of a long dump you will need to sort through
+//       console.log(data);
+//     })
+//     .fail(function(err){
+//       // the error codes are listed on the dev site
+//       console.log(err);
+//     });
+// };
 
+// getMarvelResponse();
+// @Villanuevand
 
 
 
@@ -67,9 +102,9 @@ publicKey = "69be26d469c729fce76dafc0e7933d34"
 
 privateKey = "82f8e29ecde6f6c5421e8938a8a410da894103e9"
 
-library(digest)
-hash <- digest(paste0(ts, privateKey, publicKey), algo="md5")
-console.log(hash)
+// library(digest)
+// hash <- digest(paste0(ts, privateKey, publicKey), algo="md5")
+// console.log(hash)
 
 const url = "https://developer.marvel.com/docs/v1/public/characters"
 const testurl = "https://gateway.marvel.com:443/v1/public/characters?name=iron%20man&apikey=69be26d469c729fce76dafc0e7933d34"
