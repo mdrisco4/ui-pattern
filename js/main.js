@@ -85,14 +85,14 @@ fetch(categoryUrl, {
         // document.querySelector(".randomCatImage").setAttribute('src', (catInfo[0].url))
     })
 
-    function openHero(hero) {
-        var i;
-        var x = document.querySelector("hero");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        document.getElementById(cityName).style.display = "block";
-      }
+    // function openHero(hero) {
+    //     var i;
+    //     var x = document.querySelector("hero");
+    //     for (i = 0; i < x.length; i++) {
+    //       x[i].style.display = "none";
+    //     }
+    //     document.getElementById(cityName).style.display = "block";
+    //   }
       
 
 

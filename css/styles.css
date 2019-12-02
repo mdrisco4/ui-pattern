@@ -98,15 +98,17 @@ section {
 #rogue {background-color: violet;}
 
 
-.tabs {
+/*.tabs {
     position: relative;   
     min-height: 200px; /* This part sucks */
-    clear: both;
-    margin: 25px 0;
+    /*clear: both;
+    margin: 0;
   }
   .tab {
-    float: left;
-  }
+    /* display: flex; */
+    /*float: left;
+    /* flex: 1; */
+  /*}
   .tab label {
     background: #eee; 
     padding: 10px; 
@@ -128,18 +130,18 @@ section {
     padding: 20px;
     border: 1px solid #ccc; 
   }
-  [type=radio]:checked ~ label {
+  /* [type=radio]:checked ~ label {
     background: white;
     border-bottom: 1px solid white;
     z-index: 2;
   }
   [type=radio]:checked ~ label ~ .content {
-    z-index: 1;
-  }
+    z-index: 1; */
+  /*}
   .heroes {
     position: relative;   
     min-height: 200px; /* This part sucks */
-    clear: both;
+   /* clear: both;
     margin: 25px 0;
   }
   .hero {
@@ -173,4 +175,59 @@ section {
   }
   [type=radio]:checked ~ label ~ .content {
     z-index: 1;
+  }*/
+
+  .tabs
+{
+	position: relative;
+	clear: none;
+}
+
+.tabs .tab
+{
+    float: left;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex: 1; */
+    justify-content: center;
+    margin: auto;
+    height: 60px;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+}
+
+.tabs .tab .content
+{
+	position: absolute;
+	background-color: white;
+	left: 0px;
+	width: 100%;
+	border: 1px #000 solid;
+}
+
+.checkboxtab
+{
+	display: none;
+}
+
+.tab label
+{
+    /* display: flex; */
+	margin-right: 10px;
+}
+.tab label:hover {
+    /* display: flex;
+    flex: 1; */
+    background-color: #777;
   }
+
+.checkboxtab:checked ~ label
+{
+	color: #ab70ff;
+	border: 1px #000 solid;
+}
+
+.checkboxtab:checked ~ .content
+{
+	z-index: 1;
+}
