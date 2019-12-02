@@ -70,18 +70,18 @@
 
 const url = "https://developer.marvel.com/docs"
 
-const ironManButton = document.querySelector("#ironman")
+const ironManButton = document.querySelector("#tab1")
 
 ironManButton.addEventListener("click", function() {
-fetch(categoryUrl, {
+fetch(url, {
     headers: {
         "x-api-key": "82f8e29ecde6f6c5421e8938a8a410da894103e9"
         }
     })
     .then(res => res.json())
-    .then(ironMan => {
-        document.querySelector(".ironManImage").setAttribute('src', (i.annihil.us/u/prod/marvel/i/mg/9/c0/527bb7b37ff55))
-        console.log("https://gateway.marvel.com:443/v1/public/characters?name=Iron%20Man&apikey=69be26d469c729fce76dafc0e7933d34.jpg")
+    .then(res => {
+        // document.querySelector(".ironManImage").setAttribute('src', (i.annihil.us/u/prod/marvel/i/mg/9/c0/527bb7b37ff55))
+        console.log(res)
         // document.querySelector(".randomCatImage").setAttribute('src', (catInfo[0].url))
     })
 
