@@ -11,6 +11,47 @@
 // }
 // makeDivs()
 
+// document.querySelectorAll(".hero").onclick = function (pageName, elmnt, color) {
+//     // Hide all elements with class="tabcontent" by default */
+//     var i, tabcontent, tablinks;
+//     alert("hi")
+//     hero = document.querySelectorAll(".content");
+//     for (i = 0; i < content.length; i++) {
+//       content[i].style.display = "none";
+//     }
+
+
+
+
+
+// function openPage(pageName, elmnt, color) {
+//     // Hide all elements with class="tabcontent" by default */
+//     var i, tabcontent, tablinks;
+//     hero = document.querySelectorAll(".content");
+//     for (i = 0; i < content.length; i++) {
+//       content[i].style.display = "none";
+//     }
+
+
+
+
+
+
+// // Remove the background color of all tablinks/buttons
+// content = document.querySelectorAll(".hero");
+// for (i = 0; i < hero.length; i++) {
+//   hero[i].style.backgroundColor = "";
+// }
+
+// // Show the specific tab content
+// document.querySelector(pageName).style.display = "block";
+
+// // Add the specific color to the button used to open the tab content
+// elmnt.style.backgroundColor = color;
+// }
+
+// // Get the element with id="defaultOpen" and click on it
+// document.querySelector("#defaultOpen").click();
 
 
 
@@ -29,7 +70,7 @@
 
 const url = "https://developer.marvel.com/docs"
 
-const ironManButton = document.querySelector(".ironman")
+const ironManButton = document.querySelector("#ironman")
 
 ironManButton.addEventListener("click", function() {
 fetch(categoryUrl, {
@@ -39,11 +80,11 @@ fetch(categoryUrl, {
     })
     .then(res => res.json())
     .then(ironMan => {
-        document.querySelector(".ironManImage").setAttribute('src', (http://i.annihil.us/u/prod/marvel/i/mg/9/c0/527bb7b37ff55))
+        document.querySelector(".ironManImage").setAttribute('src', (i.annihil.us/u/prod/marvel/i/mg/9/c0/527bb7b37ff55))
         console.log("https://gateway.marvel.com:443/v1/public/characters?name=Iron%20Man&apikey=69be26d469c729fce76dafc0e7933d34.jpg")
         // document.querySelector(".randomCatImage").setAttribute('src', (catInfo[0].url))
-    )
-})
+    })
+
 
 
 
@@ -63,112 +104,3 @@ fetch(categoryUrl, {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// heroes = [
-//     {
-//         name:
-//         bio:
-//         stats:
-//     },
-//     {
-//         name:
-//         bio:
-//         stats:
-//     },
-//     {
-//         name:
-//         bio:
-//         stats:
-//     },
-//     {
-//         name:
-//         bio:
-//         stats:
-//     },
-//     {
-//         name:
-//         bio:
-//         stats:
-//     },
-//     {
-//         name:
-//         bio:
-//         stats:
-//     },
-//     {
-//         name:
-//         bio:
-//         stats:
-//     },
-//     {
-//         name:
-//         bio:
-//         stats:
-//     },
-//     {
-//         name:
-//         bio:
-//         stats:
-//     }
-// ]
-
-// villains = [
-//     {
-//         name:
-//         bio:
-//         stats:
-//     },
-//     {
-//         name:
-//         bio:
-//         stats:
-//     },
-//     {
-//         name:
-//         bio:
-//         stats:
-//     },
-//     {
-//         name:
-//         bio:
-//         stats:
-//     },
-//     {
-//         name:
-//         bio:
-//         stats:
-//     },
-//     {
-//         name:
-//         bio:
-//         stats:
-//     },
-//     {
-//         name:
-//         bio:
-//         stats:
-//     },
-//     {
-//         name:
-//         bio:
-//         stats:
-//     },
-//     {
-//         name:
-//         bio:
-//         stats:
-//     }
-// ]

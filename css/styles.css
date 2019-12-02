@@ -60,7 +60,13 @@ section {
     flex: 1;
     justify-content: center;
     margin: auto;
+    height: 60px;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 20px;
 }
+.hero:hover {
+    background-color: #777;
+  }
 .villains {
     display: flex;
     flex-direction: row;
@@ -80,3 +86,13 @@ section {
 }
 
 
+
+#ironman {background-color: red;}
+#thor {background-color: orange;}
+#wolverine {background-color: yellow;}
+#jeangrey {background-color: yellowgreen;}
+#storm {background-color: green;}
+#jubilee {background-color: lightblue;}
+#spiderman {background-color: blue;}
+#doctorstrange {background-color: indigo;}
+#rogue {background-color: violet;}
