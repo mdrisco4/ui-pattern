@@ -177,14 +177,12 @@ section {
     z-index: 1;
   }*/
 
-  .tabs
-{
+.tabs {
 	position: relative;
 	clear: none;
 }
 
-.tabs .tab
-{
+.tabs .tab {
     float: left;
     /* display: flex; */
     /* flex-direction: row; */
@@ -195,10 +193,11 @@ section {
     font-family: 'Abril Fatface', cursive;
     font-size: 20px;
     background-color: red;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
-.tabs .tab .content
-{
+.tabs .tab .content {
 	position: absolute;
 	background-color: yellow;
 	left: 0px;
@@ -207,15 +206,14 @@ section {
     font-size: 15px;
     border: 1px #000 solid;
     color: red;
+    margin-top: 40px;
 }
 
-.checkboxtab
-{
+.checkboxtab {
 	display: none;
 }
 
-.tab label
-{
+.tab label {
     /* display: flex; */
     margin-right: 10px;
     background-color: red;
@@ -226,13 +224,11 @@ section {
     background-color: #777;
   }
 
-.checkboxtab:checked ~ label
-{
+.checkboxtab:checked ~ label {
 	color: yellow;
 	border: 1px #000 solid;
 }
 
-.checkboxtab:checked ~ .content
-{
+.checkboxtab:checked ~ .content {
 	z-index: 1;
 }

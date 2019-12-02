@@ -63,19 +63,22 @@
 
 //  NAME michae3975339
 
-// Public Key  69be26d469c729fce76dafc0e7933d34
+publicKey = "69be26d469c729fce76dafc0e7933d34"
 
-// Private Key  82f8e29ecde6f6c5421e8938a8a410da894103e9
+privateKey = "82f8e29ecde6f6c5421e8938a8a410da894103e9"
 
+library(digest)
+hash <- digest(paste0(ts, privateKey, publicKey), algo="md5")
+console.log(hash)
 
-const url = "https://developer.marvel.com/docs"
-
+const url = "https://developer.marvel.com/docs/v1/public/characters"
+const testurl = "https://gateway.marvel.com:443/v1/public/characters?name=iron%20man&apikey=69be26d469c729fce76dafc0e7933d34"
 const ironManButton = document.querySelector("#tab1")
 
 ironManButton.addEventListener("click", function() {
-fetch(url, {
+fetch(testurl, {
     headers: {
-        "x-api-key": "82f8e29ecde6f6c5421e8938a8a410da894103e9"
+        "x-api-key": "69be26d469c729fce76dafc0e7933d34"
         }
     })
     .then(res => res.json())
@@ -84,8 +87,10 @@ fetch(url, {
         console.log(res)
         // document.querySelector(".randomCatImage").setAttribute('src', (catInfo[0].url))
     })
+})
+// console.log("gateway.marvel.com:443/v1/public/characters?name=iron%20man&apikey=69be26d469c729fce76dafc0e7933d34")
 
-    // function openHero(hero) {
+// function openHero(hero) {
     //     var i;
     //     var x = document.querySelector("hero");
     //     for (i = 0; i < x.length; i++) {
